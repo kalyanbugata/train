@@ -1,1 +1,11 @@
- My name is kalyan
+this is first arg $1 and this is my second arg $2
+
+if [ $1 == kalyan ]
+then
+	git add $1
+	git commit -m "$2"
+	git remote add testgit git@kalyangithub:kalyanbugata/train.git 
+	git push testgit
+else
+echo error
+fi 
